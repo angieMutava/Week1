@@ -41,7 +41,10 @@ Learning DataStuctures to the core
 
 ### List comprehension
 List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.    
+# Dictionaries
+Items in dictionaries are accessed via keys and not via their position. A dictionary is an associative array (also known as hashes). Any key of the dictionary is associated (or mapped) to a value. The values of a dictionary can be any Python data type. So dictionaries are unordered key-value-pairs.
 
+Dictionaries don't support the sequence operation of the sequence data types like strings, tuples and lists. Dictionaries belong to the built-in mapping type. They are the sole representative of this kind!
 ### References.
 ```
 https://docs.python.org/2/tutorial/datastructures.html
