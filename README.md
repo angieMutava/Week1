@@ -41,13 +41,47 @@ Learning DataStuctures to the core
 
 ### List comprehension
 List comprehensions provide a concise way to create lists. Common applications are to make new lists where each element is the result of some operations applied to each member of another sequence or iterable, or to create a subsequence of those elements that satisfy a certain condition.    
-# Dictionaries
+## Dictionaries
 Items in dictionaries are accessed via keys and not via their position. A dictionary is an associative array (also known as hashes). Any key of the dictionary is associated (or mapped) to a value. The values of a dictionary can be any Python data type. So dictionaries are unordered key-value-pairs.
 
 Dictionaries don't support the sequence operation of the sequence data types like strings, tuples and lists. Dictionaries belong to the built-in mapping type. They are the sole representative of this kind!
+
+##Tuples
+A tuple is a sequence of immutable Python objects. Tuples are sequences, just like lists. The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets.
+
+Creating a tuple is as simple as putting different comma-separated values. Optionally you can put these comma-separated values between parentheses also.
+
+###Indexing, Slicing, and Matrixes
+Because tuples are sequences, indexing and slicing work the same way for tuples as they do for strings. Assuming following input.
+```
+L = ('spam', 'Spam', 'SPAM!')
+```
+
+Python Epression | Result | Description
+--- | --- | ---
+L[2]|'SPAM!'|Offsets start at zero
+L[2]|'Spam'|Negative: count from the right
+L[1:]|['Spam', 'SPAM!']|Slicing fetches sections
+
+## No Enclosing Delimiters
+
+Any set of multiple objects, comma-separated, written without identifying symbols, i.e., brackets for lists, parentheses for tuples, etc., default to tuples, as indicated in these short examples
+
+## Built-in Tuple Functions
+Python includes the following tuple functions.
+SN | Function with description
+--- | ---
+1 | cmp(tuple1, tuple2)Compares elements of both tuples
+2 | len(tuple)Gives the total length of the tuple.
+3 | max(tuple)Returns item from the tuple with max value.
+4 | min(tuple)Returns item from the tuple with min value.
+5 | tuple(seq)Converts a list into tuple.
+
+
 ### References.
 ```
 https://docs.python.org/2/tutorial/datastructures.html
+http://www.tutorialspoint.com/python/python_tuples.htm
 ```
        
 
