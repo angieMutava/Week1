@@ -78,6 +78,59 @@ SN|Function with description
 4|min(tuple).Returns item from the tuple with min value.
 5|tuple(seq).Converts a list into tuple.
 
+##Sets
+Sets are lists with no duplicate entries.Sets are a powerful tool in Python since they have the ability to calculate differences and intersections between other sets.
+To find out which members attended both events, you may use the "intersection" method:
+```
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+set(['John'])
+a.intersection(b)
+set(['John'])
+b.intersection(a)
+set(['John'])
+
+```
+To find out which members attended only one of the events, use the "symmetric_difference" method:
+```
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+a.symmetric_difference(b)
+set(['Jill', 'Jake', 'Eric'])
+b.symmetric_difference(a)
+set(['Jill', 'Jake', 'Eric'])
+
+```
+To find out which members attended only one event and not the other, use the "difference" method:
+```
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+a.difference(b)
+set(['Jake', 'Eric'])
+b.difference(a)
+set(['Jill'])
+```
+To receive a list of all participants, use the "union" method:
+```
+a = set(["Jake", "John", "Eric"])
+b = set(["John", "Jill"])
+
+a.union(b)
+set(['Jill', 'Jake', 'John', 'Eric'])
+```
+
+
+
+
+
+
+
+
+
+
 
 ### References.
 ```
