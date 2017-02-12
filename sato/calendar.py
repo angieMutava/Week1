@@ -14,12 +14,12 @@ class Calendar(object):
   def view_all(self):
     print("===========View All Events==============")
     for event in events.keys():
-      print("%s %s" %(event,events[event]))
+      print("%s %s" %(event, events[event]))
       
   def view_last_event(self):
     print("===========View Last Event==============")
     len_of_event_name = len(event_name)
-    print(event_name[len_of_event_name-1])
+    print(event_name[len_of_event_name[-1])
     
     
 angela = Calendar()
